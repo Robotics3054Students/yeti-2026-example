@@ -24,7 +24,7 @@ public class Robot extends TimedRobot {
   private final PWMSparkMax m_rightDrive = new PWMSparkMax(3);
   private final DifferentialDrive m_robotDrive = new DifferentialDrive(m_leftDrive::set, m_rightDrive::set);
   private final XboxController m_controller = new XboxController(0);
-  private final Double DRIVE_SCALING = 4.0;
+  private final Double DRIVE_SCALING = 1.0;
   private final Timer m_timer = new Timer();
 
   /** Called once at the beginning of the robot program. */
